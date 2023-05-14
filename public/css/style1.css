@@ -1,0 +1,164 @@
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.contador .caixa {
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .contador .caixa i {
+    display: block;
+    font-size: 30px;
+    color: #02A95C;
+    float: left;
+    line-height: 0;
+  }
+  
+  .contador .caixa span {
+    font-size: 42px;
+    line-height: 24px;
+    display: block;
+    font-weight: 700;
+    color: #545454;
+    margin-left: 50px;
+  }
+  
+  .contador .caixa p {
+    padding: 30px 0 0 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+  }
+  
+  .contador .caixa a {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: #7a7a7a;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .contador .caixa a:hover {
+    color: #a1a1a1;
+  }
+/* fim do contador */
+/*--------------------------------------------------------------
+# equipa do centro de doações
+--------------------------------------------------------------*/
+.equipa .membro {
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    background: #fff;
+  }
+  
+  .equipa .membro img {
+    max-width: 60%;
+    border-radius: 80%;
+    margin: 0 0 30px 0;
+  }
+  
+  .equipa .membro h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
+  
+  .equipa .membro span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  
+  .equipa .membro p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #aaaaaa;
+  }
+  
+  .equipa .membro .social {
+    margin-top: 15px;
+  }
+  
+  .equipa .membro .social a {
+    color: #919191;
+    transition: 0.3s;
+  }
+  
+  .equipa .membro .social a:hover {
+    color: #02A95C;
+  }
+  
+  .equipa .membro .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+  
+/*  */
+/*--------------------------------------------------------------
+ # depoimentos
+ --------------------------------------------------------------*/
+.testemunhas .testimonials-carousel,
+    .testemunhas .testimonials-slider {
+    overflow: hidden;
+    }
+
+    .testemunhas .testimonial-item {
+    box-sizing: content-box;
+    padding: 40px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    background: #fff;
+    }
+
+    .testemunhas .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 50px;
+    border: 6px solid #fff;
+    float: left;
+    margin: 0 10px 0 0;
+    }
+
+    .testemunhas .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+    }
+
+    .testemunhas .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+    }
+
+    .testemunhas .testimonial-item .quote-icon-left,
+    .testemunhas .testimonial-item .quote-icon-right {
+    color: white;
+    font-size: 26px;
+    }
+
+    .testemunhas .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+    }
+
+    .testemunhas .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+    }
+
+    .testemunhas .testimonial-item p {
+    font-style: italic;
+    margin: 15px 0 0 0;
+    padding: 0;
+    }
+    
