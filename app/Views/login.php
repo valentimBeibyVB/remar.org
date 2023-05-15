@@ -6,23 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$title?></title>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <link rel="stylesheet" href="<?=asset('css/admin.css')?>" />
-    <!-- <link rel="stylesheet" href="<?=asset('css/style.css')?>" />
-    <link rel="stylesheet" href="<?=asset('css/style1.css')?>" />
-    <link rel="stylesheet" href="<?=asset('css/stylec.css')?>" /> -->
-    <link rel="stylesheet" href="<?=asset('vendor/bootsrap/css/bootstrap.min.css')?>" />
-
-    <link href="<?=asset('vendor/animate.css/animate.min.css')?>" rel="stylesheet">
-  <link href="<?=asset('vendor/bootstrap-icons/bootstrap-icons.css')?>" rel="stylesheet">
-  <link href="<?=asset('vendor/boxicons/css/boxicons.min.css')?>" rel="stylesheet">
-  <link href="<?=asset('vendor/glightbox/css/glightbox.min.css')?>" rel="stylesheet">
-  <link href="<?=asset('vendor/swiper/swiper-bundle.min.css')?>" rel="stylesheet">
+    <?php 
+    require_once 'layout/linkCss.php';
+    ?>;
 
 </head>
-<body class="bg-gradient-primary">
+<body class="bg-gradient">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-12 col-md-9">
@@ -36,7 +25,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Seja Bem-Vindo! <br> á Remar
                                         </h1>
                                     </div>
-                                    <form  class="user" action="" method="post">
+                                    <form  class="user" action="<?= BASE_URL?>login" method="post">
                                         <div class="form-group">
                                             <input name="email" type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
@@ -57,7 +46,8 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Esqueceu a senha?</a>
+                                        <a class="getstarted" href="forgot-password.html">Esqueceu a senha?</a>
+                                        <a class="getstarted" href="<?=BASE_URL?>registo">Regista-se</a>
                                     </div>
                                 </div>
                             </div>

@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <link rel="stylesheet" href="<?=asset('css/admin.css')?>" />
-    <!-- <link rel="stylesheet" href="<?=asset('css/style.css')?>" />
+    <link rel="stylesheet" href="<?=asset('css/style.css')?>" />
     <link rel="stylesheet" href="<?=asset('css/style1.css')?>" />
-    <link rel="stylesheet" href="<?=asset('css/stylec.css')?>" /> -->
+    <link rel="stylesheet" href="<?=asset('css/stylec.css')?>" /> 
     <link rel="stylesheet" href="<?=asset('vendor/bootsrap/css/bootstrap.min.css')?>" />
 
     <link href="<?=asset('vendor/animate.css/animate.min.css')?>" rel="stylesheet">
@@ -22,7 +22,7 @@
   <link href="<?=asset('vendor/swiper/swiper-bundle.min.css')?>" rel="stylesheet">
 
 </head>
-<body class="bg-gradient-primary">
+<body class="bg-gradient">
 
 <div class="container">
 
@@ -36,7 +36,7 @@
                     <div class="col-lg-12">
                         <div class="p-4">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Dadas para usuario</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Dados de usuario</h1>
                             </div>
                             <form class="user" action="" method="post">
                                         <div class="form-group row">

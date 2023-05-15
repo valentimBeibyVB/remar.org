@@ -62,7 +62,23 @@
             <!-- .navbar -->
         </div>
     </header> 
-<main>
+    <main>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner" >
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-image: url(./public/img/slide/bannerr.jpg)">
+                        <div class="carousel-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
      <!-- ======= Doações realizadas ======= -->
         <section id="titulos" class="titulos">
             <h2 style="text-align: center;">O que o seu Donativo pode fazer aos outros!</h2>
@@ -244,7 +260,7 @@
     </footer>
 
   <!-- ^modal para Doadorlogin -->
-<div class="modal fade" id="doarlogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="doarlogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
