@@ -12,9 +12,20 @@ $routers = [
         "route" => "/sobre",
         "type" => "GET",
         "controller" => "HomeController:about",
-    ],[
+    ],
+    [
       "route" => "/login",
       "type" => "GET",
       "controller" => "HomeController:login",
-   ]
+    ],
+    [
+      "route" => "/registo",
+      "type" => "GET",
+      "controller" => "HomeController:CadastrarDoador",
+    ],
+    [
+      "route" => "/registo",
+      "type" => "GET",
+      "controller" => "HomeController:doar",
+    ]
 ];
