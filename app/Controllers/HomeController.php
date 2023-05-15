@@ -17,10 +17,8 @@ class HomeController extends BaseController{
     }
 
     public function about() {
-        $title ="Pagina home";
-        $name = $this->requestMethod;
-        return $this->view("login", compact("name", "title"));
-        // var_dump($this->user->find()->fetch(true));
+
+         var_dump($this->user->find()->fetch(true));
     }
     public function login() {
         $form=filter_input_array(INPUT_POST,FILTER_DEFAULT);
