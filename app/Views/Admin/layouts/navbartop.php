@@ -26,7 +26,7 @@
 <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo dataA();?></span>
+            <span class="mr-2 d-none d-lg-inline text-gray-600 small">16/05/203</span>
         </a>
     <!-- Nav Item - Search Dropdown  -->
     <li class="nav-item dropdown no-arrow d-sm-none">
@@ -63,9 +63,9 @@
     <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['Nome'];?></span>
+            <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php //echo $_SESSION['Nome'];?> Nome </span>
             <img class="img-profile rounded-circle"
-                src="img/undraw_profile.svg">
+                src="<?=asset('Admin/img/undraw_profile.svg')?>">
         </a>
         <!-- caixa de menu do usuario -->
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

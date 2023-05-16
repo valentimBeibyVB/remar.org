@@ -10,11 +10,10 @@
     <meta name="author" content="">
 
     <title><?=$title?></title>
-    <link href="<?asset('Admin/vendor/fontawesome-free/css/all.min.css')?>" rel="stylesheet" type="text/css"/>
-    <link   href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    <link rel="stylesheet" href="<?=asset('Admin/css/stylelogin.css')?>"/>
-    <link href="<?=asset('Admin/vendor/datatables/dataTables.bootstrap4.min.css')?>" rel="stylesheet"/>
+    <?php
+    
+        require_once __DIR__.DIRECTORY_SEPARATOR.'layouts/csslink.php';
+    ?>
 </head>
 
 <body id="page-top">
@@ -23,7 +22,9 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php require_once "../Admin/layouts/sidebar.php";?>
+        <?php 
+           require_once __DIR__.DIRECTORY_SEPARATOR.'layouts/sidebar.php';
+        ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -32,7 +33,9 @@
             <!-- Main Content -->
             <div id="content">
                 <!-- Topbar -->
-               <?php include "include/navbartop.php";?>
+               <?php 
+                require_once __DIR__.DIRECTORY_SEPARATOR.'layouts/navbartop.php'
+               ?>;
                 <!-- End of Topbar -->
                 
                 <!-- Begin Page Content -->
@@ -47,7 +50,9 @@
 
                     <!-- Content Row -->
                     <div class="row">
-                    <?php include "include/cardPross.php" ?>
+                    <?php
+                        require_once __DIR__.DIRECTORY_SEPARATOR.'layouts/cardPross.php'
+                    ?>;
                         <!-- cards -->
                     <!-- Content Row -->
                     <div class="row">
@@ -138,7 +143,9 @@
         <i class="fas fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
-    <?php include "include/modal.php";?>
-    <?php include "include/scripJS.php" ?>
+    <?php 
+        require_once __DIR__.DIRECTORY_SEPARATOR.'layouts/scripJS.php';
+    ?>
+    <?php //include "include/scripJS.php" ?>
 </body>
 </html>

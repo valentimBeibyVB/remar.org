@@ -23,7 +23,7 @@ $routers = [
     [
       "route" => "/login",
       "type" => "POST",
-      "controller" => "HomeController:login",
+      "controller" => "LoginController:login",
     ],
     [
       "route" => "/registo",

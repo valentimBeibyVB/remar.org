@@ -25,17 +25,20 @@
                                         <h1 class="h4 text-gray-900 mb-4">Seja Bem-Vindo! <br> á Remar
                                         </h1>
                                     </div>
-                                    <form  class="user" action="<?= BASE_URL?>login" method="post">
+                                    <form  class="user" action="<?= BASE_URL?>login" method="post" id="login">
                                         <div class="form-group">
                                             <input name="email" type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                id="email" aria-describedby="emailHelp"
                                                 placeholder="Ensira o teu Email">
+                                                <span id="errorE" class="invalid-feedback"></span>
                                         </div>
                                         <div class="form-group">
                                             <input name="senha" type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="senha" placeholder="Password">
+                                                <span id="errorS" class="invalid-feedback"></span>
                                         </div>
-                                        <input type="submit"  name="logar" value="Login" class="btn btn-primary btn-user btn-block">
+                                        <!-- <input type="submit"  name="logar" value="Login" class="btn btn-primary btn-user btn-block"> -->
+                                        <button type="submit" name="logar" class="btn btn-primary btn-user btn-block">Login</button>
                                         <!-- <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -57,5 +60,40 @@
             </div>
         </div>
     </div>
+    <script>
+        const form=document.querySelector("#logi");
+        const email=document.querySelector("#email");
+        const senha=document.querySelector("#senha");
+        const errorE=document.querySelector("#errorE");
+        const errorS=document.querySelector("#errorS");
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            if(email.value=="" || senha.value==""){
+                if(email.value==""){
+                    email.classList.remove("is-valid")
+                    email.classList.add("is-invalid")
+                    errorE.innerHTML="";
+                    errorE.innerHTML+="Preencha o email";
+                }else{
+                    email.classList.remove("is-invalid")
+                    email.classList.add("is-valid")
+                    errorE.innerHTML="";
+                    
+                }
+                if(senha.value==""){
+                    senha.classList.remove("is-valid")
+                    senha.classList.add("is-invalid")
+                    errorS.innerHTML="";
+                    errorS.innerHTML+="Preencha a senha";
+                }else{
+                    senha.classList.remove("is-invalid")
+                    senha.classList.add("is-valid")
+                    errorS.innerHTML="";
+                }
+            }else{
+                
+            }
+        })
+    </script>
 </body>
 </html>

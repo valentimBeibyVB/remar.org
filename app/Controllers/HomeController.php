@@ -20,9 +20,7 @@ class HomeController extends BaseController{
     }
     public function login() {
         $title ="Pagina home";
-        $name = $this->requestMethod;
-        return $this->view("login", compact("name", "title"));
-        // var_dump("Pagina de loga");
+        return $this->view("login", compact("title"));
     }
     public function CadastrarDoador(){
         $title ="Regista-se";

@@ -1,9 +1,9 @@
 <?php
-      session_start();
-      if(empty($_SESSION['active']))
-      {
-          header('location: ../');
-      }
+    //   session_start();
+    //   if(empty($_SESSION['active']))
+    //   {
+    //       header('location: ../');
+    //   }
  ?>     
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -12,7 +12,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
     </div>
-    <div class="sidebar-brand-text mx-3"><?php echo $_SESSION['Nome'];?><sup>2</sup></div>
+    <div class="sidebar-brand-text mx-3"><?php //echo $_SESSION['Nome'];?> NOme user<sup>2</sup></div>
 </a>
 
 <!-- Divider -->

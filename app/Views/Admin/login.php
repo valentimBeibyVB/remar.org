@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$title?></title>
-    <?php 
-        require_once 'Admin/layouts/csslink.php';
-    ?>;
+    <link rel="stylesheet" href="<?=asset('Admin/css/stylelogin.css')?>"/>
 </head>
 <body class="bg-gradient">
     <div class="container">
