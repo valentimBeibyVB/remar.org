@@ -7,8 +7,8 @@
     <title><?=$title?></title>
     
     <?php 
-    require_once 'layout/linkCss.php'
-    ?>;
+    require_once 'layout/linkCss.php';
+    ?>
 
 </head>
 <body class="bg-gradient">
