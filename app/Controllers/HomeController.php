@@ -16,23 +16,12 @@ class HomeController extends BaseController{
     }
 
     public function about() {
-
-         var_dump($this->user->find()->fetch(true));
+        var_dump($this->user->find()->fetch(true));
     }
     public function login() {
-        $user = new User();
-        $verifyUserExists= $user->find("email = :email",$_POST['email'])->fetch();
-        if($verifyUserExists){
-            $dados['error']='Email ou senha incorrecta!';
-        }if(password_verify($verifyUserExists->password,$_POST["senha"])){
-            $dados['error']='Email ou senha incorrecta!';
-        }else{
-
-        }
-        
         $title ="Pagina home";
         $name = $this->requestMethod;
-        return $this->view("login", compact("name", "title","dados"));
+        return $this->view("login", compact("name", "title"));
         // var_dump("Pagina de loga");
     }
     public function CadastrarDoador(){
@@ -40,11 +29,5 @@ class HomeController extends BaseController{
         $name = $this->requestMethod;
         return $this->view("registo", compact("name", "title"));
     }
-    public function doar(){
-        $title ="Regista-se";
-        $name = $this->requestMethod;
-        return $this->view("doar", compact("name", "title"));
-    }
-    
 }
 

@@ -3,6 +3,8 @@
 const BASE_URL =  "http://localhost/ong/";
 
 $routers = [
+
+  // rotas para pagina visitante
     [
        "route" => "/",
        "type" => "GET",
@@ -32,5 +34,17 @@ $routers = [
       "route" => "/Doar",
       "type" => "GET",
       "controller" => "HomeController:doar",
+    ],
+
+    // rotas para area do administrador
+    [
+      "route" => "/Admin",
+      "type" => "GET",
+      "controller" => "AdminController:login",
+    ],
+    [
+      "route" => "/Admin/home",
+      "type" => "GET",
+      "controller" => "AdminController:home",
     ]
 ];
